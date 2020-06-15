@@ -1,0 +1,9 @@
+.idea
+
+/app/tmp/*
+*.pdf
+report_*.html
+
+/vendor
+
+!empty

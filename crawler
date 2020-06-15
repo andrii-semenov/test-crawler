@@ -1,0 +1,17 @@
+#!/usr/local/bin/php
+<?php
+
+/**
+* Приложение Crawler
+*
+* Осуществляет рекурентный поиск и подсчет картинок по заданному сайту.
+*
+* @author Fizik <andrey.k.semenov@gmail.com>
+* @version 0.1
+*/
+
+require __DIR__.'/vendor/autoload.php';
+
+use Fizik\CrawlerApp;
+
+(new CrawlerApp())->run($argv);

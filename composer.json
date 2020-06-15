@@ -1,0 +1,16 @@
+{
+    "name": "test_project/crawler",
+    "description": "Test project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Diego Fizik",
+            "email": "andrey.k.semenov@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Fizik\\": ["app/", "app/src/", "app/lib/"]
+        }
+    }
+}

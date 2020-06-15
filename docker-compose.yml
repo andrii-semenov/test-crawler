@@ -1,0 +1,9 @@
+version: '3'
+services:
+    php7-cli-4tz:
+      image: fizik/crowler-app-tz-php:7.4-cli
+      container_name: crowler-app-tz
+      build:
+        context: .
+      volumes:
+        - .:/var/www/wwwcrawler
