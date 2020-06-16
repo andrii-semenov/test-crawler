@@ -88,7 +88,7 @@ class RecursiveCrawler extends BaseDispatcher
             $href = explode('?', $href)[0];
             $href = $this->CheckUrlHelper->makeValidUrl($href, $this->init_url);
 
-            if(!$seen[$href]) {
+            if(!isset($seen[$href])) {
                 $seen[$href] = true;
 
                 if($this->CheckUrlHelper->checkLocalUrl($href, $this->init_url)) {

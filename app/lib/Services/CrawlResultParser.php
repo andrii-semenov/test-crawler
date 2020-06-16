@@ -21,7 +21,25 @@ trait CrawlResultParser
                 'time' => $val['time']
             ];
         }
+
+        return $this->sortParsedResult($report);
+    }
+
+    /**
+    * Сортирует пропаршеный отчет
+    *
+    * @param array $result результат crawler-a
+    * @return array
+    */
+    private function sortParsedResult(array $report):array
+    {
+        usort($report, function($a, $b) {
+            if($a['count_img'] == $b['count_img']) {
+                return 0;
+            }
+            return ($a['count_img'] < $b['count_img']) ? -1 : 1;
+        });
         return $report;
     }
-    
+
 }
