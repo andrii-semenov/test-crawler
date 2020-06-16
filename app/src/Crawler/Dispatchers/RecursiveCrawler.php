@@ -86,6 +86,7 @@ class RecursiveCrawler extends BaseDispatcher
             // $delta_time = -hrtime(true);
             $href = $element->getAttribute('href');
             $href = explode('?', $href)[0];
+            $href = explode('#', $href)[0];
             $href = $this->CheckUrlHelper->makeValidUrl($href, $this->init_url);
 
             if(!isset($seen[$href])) {
