@@ -74,7 +74,7 @@ class HTMLTable extends BaseSaver
     protected function getHTMLHeader(): string
     {
         return <<<EOD
-            <DOCTYPE html>
+            <!DOCTYPE html>
             <html>
                 <body>
                 <p>Time is in milliseconds</p>
